@@ -1,15 +1,115 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap w/ Vite</title>
-    <script type="module" src="./js/main.js"></script>
-  </head>
-  <body>
-    <div class="container py-4 px-3 mx-auto">
-      <h1>Hello, Bootstrap and Vite!</h1>
-      <button class="btn btn-primary">Primary button</button>
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>網站首頁</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #756e6e;
+            color: white;
+            padding: 15px;
+        }
+
+        .logo {
+            font-size: 1.2em;
+            font-weight: bold;
+        }
+
+        .options a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+        }
+
+        nav {
+            background-color: #f4f4f4;
+            padding: 10px 15px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            gap: 15px;
+        }
+
+        nav ul li a {
+            color: #333;
+            text-decoration: none;
+        }
+
+        nav ul li a:hover {
+            color: #007BFF;
+        }
+
+        .content img {
+            width: 1200px;
+            height: 600px;
+            display: block;
+            margin: 0 auto;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #756e6e;
+            color: white;
+        }
+
+        @media (max-width: 768px) {
+            header, nav ul {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .options a {
+                margin: 10px 0;
+            }
+
+            .content img {
+                width: 100%;
+                height: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="logo">1112211020</div>
+    <div class="options">
+        <a href="#">首頁</a>
+        <a href="#">專業服務</a>
+        <a href="#">交通方式</a>
+        <a href="#">連絡我們</a>
     </div>
-  </body>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="#">其他選項</a></li>
+    </ul>
+</nav>
+
+<div class="content">
+    <img src="https://picsum.photos/1200/600" alt="美麗風景">
+</div>
+
+<footer>
+    <p>&copy; 2025 劉若芷. All rights reserved.</p>
+</footer>
+
+</body>
 </html>
